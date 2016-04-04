@@ -38,6 +38,7 @@ GML 3.2 <a name="ref_GML32"/>  | [Geography Markup Language version 3.2.1, OGC d
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
 | [gml-hy-n.attribute-consistency](gml-hy-n.attribute-consistency.md)  | Draft  |
+| [gml-hy-n.basic-test](gml-hy-n.basic-test.md)  | Draft  |
 | [gml-hy-n.code-list-values](gml-hy-n.code-list-values.md)  | Draft  |
 | [gml-hy-n.consistency-at-borders](gml-hy-n.consistency-at-borders.md)  | Draft  |
 | [gml-hy-n.constraints](gml-hy-n.constraints.md)  | Draft  |

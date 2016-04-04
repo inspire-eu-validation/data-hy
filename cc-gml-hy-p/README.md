@@ -51,7 +51,7 @@ GML 3.2 <a name="ref_GML32"/>  | [Geography Markup Language version 3.2.1, OGC d
 | ----------------------------------------------------------------- | -------- |
 | [gml-hy-p.basic-test](gml-hy-p.basic-test.md)  | Draft  |
 
-More test cases to be added.
+More test cases to be added. This will be very similar to the [Hydro Network conformance class](../cc-hy-n/README.md).
 
 ## XML namespace prefixes <a name="namespaces"></a>
 
