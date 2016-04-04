@@ -26,6 +26,12 @@ A paragraph of the test steps and assertions. Use bullets or any markdown format
 
 Any additional notes. We can also use this for open questions during drafting.
 
+## Parameters
+
+Identifier  |  Description
+---------------------------------------------------------- | -------------------------------------------------------------------------
+paramName <a name="paramName"/>  |  description and value range
+
 ## Messages
 
 Identifier  |  Message text (parameters start with '$')
