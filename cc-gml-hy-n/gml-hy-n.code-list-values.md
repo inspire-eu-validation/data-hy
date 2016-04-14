@@ -30,7 +30,7 @@ We probably need to be split this into different tests for the different types o
 
 Identifier  |  Message text (parameters start with '$')
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-disallowedCodeListValue <a name="disallowedCodeListValue"/>  |  XML document '$filename', $featureType '$gmlid': The property '$propertyName' has a value that is not one of the allowed values. 
+disallowedCodeListValue <a name="disallowedCodeListValue"/>  |  XML document '$filename', $featureType '$gmlid': The property '$propertyName' has a value '$value' that is not one of the allowed values. 
 
 ## Contextual XPath references
 
