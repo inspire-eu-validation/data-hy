@@ -24,19 +24,19 @@ GML 3.2 <a name="ref_GML32"/>  | [Geography Markup Language version 3.2.1, OGC d
 
 ## Test Cases
 
-| Identifier                                                        | Status   |
-| ----------------------------------------------------------------- | -------- |
-| [gml.code-list-extensions](gml.code-list-extensions.md)  | Draft  |
-| [gml.endLifespanVersion](gml.endLifespanVersion.md)  | Draft  |
-| [gml.identifier-persistent](gml.identifier-persistent.md)  | Draft  |
-| [gml.nilReason](gml.nilReason.md)  | Draft  |
-| [gml.root-element](gml.root-element.md)  | Draft  |
-| [gml.schema-extensions-not-overlapping](gml.schema-extensions-not-overlapping.md)  | Draft  |
-| [gml.schema-valid-1](gml.schema-valid-1.md)  | Draft  |
-| [gml.schema-valid-2](gml.schema-valid-2.md)  | Draft  |
-| [gml.schemaLocation](gml.schemaLocation.md)  | Draft  |
-| [gml.utf8](gml.utf8.md)  | Draft  |
-| [gml.validTo](gml.validTo.md)  | Draft  |
+| Identifier                                                        | Status   | Test case in current ATS  |
+| ----------------------------------------------------------------- | -------- | ------------ |
+| [gml.code-list-extensions](gml.code-list-extensions.md)  | Draft  | A.1.2, A.5.1  |
+| [gml.endLifespanVersion](gml.endLifespanVersion.md)  | Draft  | A.3.3  |
+| [gml.identifier-persistent](gml.identifier-persistent.md)  | Draft  | A.3.1, A.3.2  |
+| [gml.nilReason](gml.nilReason.md)  | Draft  | A.1.3, A.1.3, (A.6.1), A.9.5  |
+| [gml.root-element](gml.root-element.md)  | Draft  | (A.6.1), A.9.5  |
+| [gml.schema-extensions-not-overlapping](gml.schema-extensions-not-overlapping.md)  | Draft  | A.1.1 |
+| [gml.schema-valid-1](gml.schema-valid-1.md)  | Draft  | A.1.1, A.1.2, A.1.3, A.1.4, A.1.5, A.3.2, (A.6.1), A.8.1, A.9.5  |
+| [gml.schema-valid-2](gml.schema-valid-2.md)  | Draft  | (A.6.1), A.9.5  |
+| [gml.schemaLocation](gml.schemaLocation.md)  | Draft  | (A.6.1), A.9.5  |
+| [gml.utf8](gml.utf8.md)  | Draft  | (A.6.1), A.9.5  |
+| [gml.validTo](gml.validTo.md)  | Draft  | A.3.4  |
 
 ## XML namespace prefixes <a name="namespaces"></a>
 

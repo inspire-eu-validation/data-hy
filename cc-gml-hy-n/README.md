@@ -35,32 +35,34 @@ GML 3.2 <a name="ref_GML32"/>  | [Geography Markup Language version 3.2.1, OGC d
 
 ## Test Cases
 
-| Identifier                                                        | Status   |
-| ----------------------------------------------------------------- | -------- |
-| [gml-hy-n.attribute-consistency](gml-hy-n.attribute-consistency.md)  | Draft  |
-| [gml-hy-n.basic-test](gml-hy-n.basic-test.md)  | Draft  |
-| [gml-hy-n.code-list-values](gml-hy-n.code-list-values.md)  | Draft  |
-| [gml-hy-n.consistency-at-borders](gml-hy-n.consistency-at-borders.md)  | Draft  |
-| [gml-hy-n.constraints](gml-hy-n.constraints.md)  | Draft  |
-| [gml-hy-n.crs](gml-hy-n.crs.md)  | Draft  |
-| [gml-hy-n.delineationKnown](gml-hy-n.delineationKnown.md)  | Draft  |
-| [gml-hy-n.geometry-consistency](gml-hy-n.geometry-consistency.md)  | Draft  |
-| [gml-hy-n.identifier-consistency](gml-hy-n.identifier-consistency.md)  | Draft  |
-| [gml-hy-n.identifier-source](gml-hy-n.identifier-source.md)  | Draft  |
-| [gml-hy-n.linear-referencing](gml-hy-n.linear-referencing.md)  | Draft  |
-| [gml-hy-n.link-centrelines](gml-hy-n.link-centrelines.md)  | Draft  |
-| [gml-hy-n.link-intersections](gml-hy-n.link-intersections.md)  | Draft  |
-| [gml-hy-n.multiple-resolutions](gml-hy-n.multiple-resolutions.md)  | Draft  |
-| [gml-hy-n.network-connectivity-1](gml-hy-n.network-connectivity-1.md)  | Draft  |
-| [gml-hy-n.network-connectivity-2](gml-hy-n.network-connectivity-2.md)  | Draft  |
-| [gml-hy-n.network-connectivity-3](gml-hy-n.network-connectivity-3.md)  | Draft  |
-| [gml-hy-n.network-connectivity-4](gml-hy-n.network-connectivity-4.md)  | Draft  |
-| [gml-hy-n.no-free-nodes](gml-hy-n.no-free-nodes.md)  | Draft  |
-| [gml-hy-n.object-references](gml-hy-n.object-references.md)  | Draft  |
-| [gml-hy-n.representation-consistency](gml-hy-n.representation-consistency.md)  | Draft  |
-| [gml-hy-n.simple-features](gml-hy-n.simple-features.md)  | Draft  |
-| [gml-hy-n.trs](gml-hy-n.trs.md)  | Draft  |
-| [gml-hy-n.uom](gml-hy-n.uom.md)  | Draft  |
+| Identifier                                                        | Status   | Test case in current ATS  |
+| ----------------------------------------------------------------- | -------- | ------------ |
+| [gml-hy-n.attribute-consistency](gml-hy-n.attribute-consistency.md)  | Draft  | A.3.6 |
+| [gml-hy-n.basic-test](gml-hy-n.basic-test.md)  | Draft  | n/a |
+| [gml-hy-n.code-list-values](gml-hy-n.code-list-values.md)  | Draft  | A.1.3, A.6.1  |
+| [gml-hy-n.consistency-at-borders](gml-hy-n.consistency-at-borders.md)  | Draft  | A.3.6 |
+| [gml-hy-n.constraints](gml-hy-n.constraints.md)  | Draft  | A.1.6  |
+| [gml-hy-n.crs](gml-hy-n.crs.md)  | Draft  | A.2.1, A.2.2, A.6.2, A.6.3, A.9.1  |
+| [gml-hy-n.delineationKnown](gml-hy-n.delineationKnown.md)  | Draft  | A.1.9  |
+| [gml-hy-n.geometry-consistency](gml-hy-n.geometry-consistency.md)  | Draft  | A.1.7  |
+| [gml-hy-n.identifier-consistency](gml-hy-n.identifier-consistency.md)  | Draft  | A.3.7 |
+| [gml-hy-n.identifier-source](gml-hy-n.identifier-source.md)  | Draft  | A.3.7  |
+| [gml-hy-n.linear-referencing](gml-hy-n.linear-referencing.md)  | Draft  | A.1.8 |
+| [gml-hy-n.link-centrelines](gml-hy-n.link-centrelines.md)  | Draft  | A.1.10  |
+| [gml-hy-n.link-intersections](gml-hy-n.link-intersections.md)  | Draft  | A.1.7 |
+| [gml-hy-n.multiple-resolutions](gml-hy-n.multiple-resolutions.md)  | Draft  | A.1.7 |
+| [gml-hy-n.network-connectivity-1](gml-hy-n.network-connectivity-1.md)  | Draft  | A.1.11  |
+| [gml-hy-n.network-connectivity-2](gml-hy-n.network-connectivity-2.md)  | Draft  | A.1.11  |
+| [gml-hy-n.network-connectivity-3](gml-hy-n.network-connectivity-3.md)  | Draft  | A.1.11  |
+| [gml-hy-n.network-connectivity-4](gml-hy-n.network-connectivity-4.md)  | Draft  | A.1.11  |
+| [gml-hy-n.no-free-nodes](gml-hy-n.no-free-nodes.md)  | Draft  | A.1.7 |
+| [gml-hy-n.object-references](gml-hy-n.object-references.md)  | Draft  | A.1.8  |
+| [gml-hy-n.representation-consistency](gml-hy-n.representation-consistency.md)  | Draft  | A.1.7  |
+| [gml-hy-n.simple-features](gml-hy-n.simple-features.md)  | Draft  | A.1.7  |
+| [gml-hy-n.trs](gml-hy-n.trs.md)  | Draft  | A.2.5  |
+| [gml-hy-n.uom](gml-hy-n.uom.md)  | Draft  | A.2.6  |
+
+Note: A test case seems to be missing for A.3.5 (update frequency!)
 
 ## XML namespace prefixes <a name="namespaces"></a>
 

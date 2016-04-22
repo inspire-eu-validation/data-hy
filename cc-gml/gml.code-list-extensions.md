@@ -2,7 +2,7 @@
 
 **Version**: 0.1
 
-**Purpose**: Ensure that any extensions do not contradict or overlap with the approved INSPIRE application schemas.
+**Purpose**: Ensure that any extensions do not contradict or overlap with the approved INSPIRE code lists.
 
 **Prerequisites**
 
