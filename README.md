@@ -55,3 +55,4 @@ To illustrate and test the approach, draft XQuery-based executable test suites h
 A **[small test data set](data/README.md)** has been accessed from an INSPIRE download service. 
 
 Using the executable test suites and the sample test data set, a **[test report](wfs-es-hy-n-result.html)** for the test of this sample data set against the conformance classes has been created. Use [this link](http://portele.de/wfs-es-hy-n-result.html) to see the rendered test report. 
+

@@ -10,7 +10,7 @@ n/a
 
 **Test method**
 
-* Verify that any coordinate reference system is publicly accessible via HTTP, i.e. inspect links to coordinate reference systems. Verify that each link ([srsName1](#srsName1), [srsName2](#srsName2), [frame](#frame)) resolves to a definition of the reference system. Otherwise report [linkDoesNotResolve](#linkDoesNotResolve).
+* Verify that any coordinate reference system is publicly accessible via HTTP, i.e. inspect links to coordinate reference systems. Verify that each link ([srsName1](#srsName1), [srsName2](#srsName2), [frame](#frame)) is a HTTP URI that when retrieved using HTTP GET is a definition of the reference system. Otherwise report [brokenLink](#brokenLink).
 
 **Reference(s)**: 
 
@@ -28,7 +28,7 @@ This assertion can be removed as the application schema does not specify any ext
 
 Identifier  |  Message text (parameters start with '$')
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-linkDoesNotResolve <a name="linkDoesNotResolve"/>  |  XML document '$filename', $featureType '$gmlid': A spatial or temporal geometry uses an unexpected, unresolvable coordinate reference system with identifier '$rsid'. Every URI must be a HTTP URI in a CRS register that resolves to a definition of the reference system.
+brokenLink <a name="brokenLink"/>  |  XML document '$filename', $featureType '$gmlid': A spatial or temporal geometry uses an unexpected coordinate reference system with identifier '$rsid' that cannot be retrieved. Every URI must be a HTTP URI in a CRS register that when retrieved with HTTP GET returns a definition of the reference system.
 
 ## Contextual XPath references
 

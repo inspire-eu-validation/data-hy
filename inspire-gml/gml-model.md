@@ -1,4 +1,4 @@
-# gml-model
+# GML model
 
 **Version**: 0.1
 
@@ -10,7 +10,7 @@
 
 **Test method**
 
-* Inspect each property element and verify that it either carries a resolvable reference to an object (@xlink:href), contains one or more object elements as child elements or contains a non-empty text node (whitespace is trimmed before checking for empty text). Otherwise report [emptyValue](#emptyValue).
+* Inspect each property element and verify that it either carries a URI reference to an object (@xlink:href) that can be retrieved using HTTP GET, contains one or more object elements as child elements or contains a non-empty text node (whitespace is trimmed before checking for empty text). Otherwise report [emptyValue](#emptyValue).
 * Inspect each XML element that represents a feature property and that has a [nilReason](#nilReason) XML attribute. Verify that xsi:nil='true' is present in the property element, i.e. a reason is only provided in properties that are void / nil. Otherwise report [nilMissing](#nilMissing).
 * Inspect all [nilReason](#nilReason) values and verify that either the values from the INSPIRE registry or the pre-defined values from the GML standard are used. Otherwise report [incorrectReason](#incorrectReason). Valid values are:
  * 'http://inspire.ec.europa.eu/codelist/VoidReasonValue/Unknown'
