@@ -1,8 +1,8 @@
-# Conformance class: Application schema, Hydrography - Network (DRAFT)
+# Conformance class: Data consistency, Hydrography (DRAFT)
 
-Conformance class for the requirements associated with the application schema. 
+Conformance class for the requirements related to the consistency of the data.
 
-To be able to test this conformance class, the encoding of the data set must be known, i.e. this is a parameterized conformance class. The XPath expressions used in this test suite assume that the GML encoding is used. If used with the GML encoding this conformance class has an indirect dependency to the conformance class "GML application schema for Hydrography - Network".
+To be able to test this conformance class, the encoding of the data set must be known, i.e. this is a parameterized conformance class. The XPath expressions used in this test suite assume that the GML encoding is used. If used with the GML encoding this conformance class has an indirect dependency to the conformance class "GML application schemas, Hydrography".
 
 This conformance class is part of the [Abstract Test Suite for the INSPIRE Data Specification on Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1).
 
@@ -14,7 +14,11 @@ INSPIRE spatial data set
 
 ### Direct dependencies
 
-none
+A direct dependency is another conformance class whose requirements must be met by the data set, too.
+
+| Specification | Conformance class | Parameters | 
+| ------------- | ----------------- | ---------- |
+| [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-dc/README#ref_TG_DS_tmpl) | [Data consistency](http://inspire.ec.europa.eu/id/ats/data/3.0rc3/data-consistency) | n/a |
 
 ### Indirect dependencies
 
@@ -22,16 +26,40 @@ An indirect dependency is another conformance class whose requirements must be m
 
 | Specification | Conformance class | Related resource | Parameters |
 | ------------- | ----------------- | ---------------- | ---------- |
-| [TG DS-HY](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/README#ref_TG_DS_HY) | [GML application schemas, Hydrography features](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-gml) | INSPIRE spatial data set encoded in GML, Hydrography features | n/a |
+| [TG DS-HY](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/README#ref_TG_DS_HY) | [GML application schemas, Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-gml) | INSPIRE spatial data set encoded in GML, Hydrography features | n/a |
  
 ## Feature types <a name="feature-types"></a>
 
-The instantiable feature types in the application schema are:
+The instantiable feature types are:
+
+Network:
 
 * HydroNode
 * WatercourseLink
 * WatercourseLinkSequence
 * WatercourseSeparatedCrossing
+
+Physical Waters:
+
+* Watercourse
+* StandingWater
+* Wetland
+* GlacierSnowfield
+* Shore
+* DrainageBasin
+* RiverBasin
+* LandWaterBoundary
+* Embankment
+* Ford
+* Lock
+* Sluice
+* DamOrWeir
+* ShorelineConstruction
+* Crossing
+* SpringOrSeep
+* VanishingPoint
+* Rapids
+* Falls
 
 *Note*: When "features" or "spatial objects" are mentioned in the test cases, this refers only to instances of feature types of this application schema, not to any types specified in any other application schema.
 
@@ -48,12 +76,11 @@ TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Tem
 
 | Identifier                                                        | Status   | Test case in [TG DS-HY](#ref_TG_DS_HY)  |
 | ----------------------------------------------------------------- | -------- | ------------ |
-| [Code list values](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/code-list-values)  | Draft  | A.1.3, A.6.1  |
-| [Constraints](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/constraints)  | Draft  | A.1.6  |
-| [Geometry](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/geometry-consistency)  | Draft  | A.1.7  |
-| [Identifiers and references](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/identifier-and-references)  | Draft  | A.1.8 |
-| [Link centrelines](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/link-centrelines)  | Draft  | A.1.10  |
-| [Network connectivity](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/network-connectivity)  | Draft  | A.1.11  |
+| [Spatial consistency](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-dc/spatial)  | ready for review  | A.1.7, A.3.6  |
+| [Thematic consistency](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-dc/thematic)  | ready for review  | A.3.6  |
+| [Identifiers](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-dc/identifiers)  | ready for review  | A.3.7  |
+
+Note: A test case seems to be missing for A.3.5 (update frequency).
 
 ## XML namespace prefixes <a name="namespaces"></a>
 
@@ -63,15 +90,8 @@ Prefix         | Namespace
 -------------- | -------------------------------------------------
 hy-n3          | http://inspire.ec.europa.eu/schemas/hy-n/3.0
 hy-n4          | http://inspire.ec.europa.eu/schemas/hy-n/4.0
-net3           | http://inspire.ec.europa.eu/schemas/net/3.0
-net4           | http://inspire.ec.europa.eu/schemas/net/4.0
+hy-p3          | http://inspire.ec.europa.eu/schemas/hy-p/3.0
+hy-p4          | http://inspire.ec.europa.eu/schemas/hy-p/4.0
+gml            | http://www.opengis.net/gml/3.2
 hy-n           | http://inspire.ec.europa.eu/schemas/hy-n/3.0 or http://inspire.ec.europa.eu/schemas/hy-n/4.0
 hy-p           | http://inspire.ec.europa.eu/schemas/hy-p/3.0 or http://inspire.ec.europa.eu/schemas/hy-p/4.0
-net            | http://inspire.ec.europa.eu/schemas/net/3.0 or http://inspire.ec.europa.eu/schemas/net/4.0
-base           | http://inspire.ec.europa.eu/schemas/base/3.3
-gml            | http://www.opengis.net/gml/3.2
-wfs            | http://www.opengis.net/wfs/2.0
-xsi            | http://www.w3.org/2001/XMLSchema-instance
-xlink          | http://www.w3.org/1999/xlink
-xml            | http://www.w3.org/XML/1998/namespace
-

@@ -1,6 +1,6 @@
-# thematic
+# Thematic consistency
 
-**Version**: 0.1
+**Version**: 1
 
 **Purpose**: Verify that the thematic information is consistent.
 
@@ -14,7 +14,7 @@ n/a
 
 **Reference(s)**: 
 
-* [TG DS Template](README.md#ref_TG_DS_tmpl) IR requirement Section 8.7.1 (3)
+* [TG DS-HY](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-dc/README#ref_TG_DS_HY) IR requirement Section 8.7.1 (3)
 
 **Test type**: Manual
 

@@ -1,12 +1,10 @@
-# link-centrelines
+# Link centrelines
 
-**Version**: 0.1
+**Version**: 1
 
 **Purpose**: Verify that watercourse links intersections are consistent with the real world.
 
 **Prerequisites**
-
-n/a
 
 **Test method**
 
@@ -14,7 +12,7 @@ n/a
 
 **Reference(s)**: 
 
-* [TG DS Template](README.md#ref_TG_DS_tmpl) IR requirement Section 8.7.6
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/README#ref_TG_DS_tmpl) IR requirement Section 8.7.6
 
 **Test type**: Manual
 

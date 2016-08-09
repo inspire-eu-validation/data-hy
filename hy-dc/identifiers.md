@@ -1,12 +1,10 @@
-# identifiers
+# Identifiers
 
-**Version**: 0.1
+**Version**: 1
 
 **Purpose**: Verify that identifiers are managed properly.
 
 **Prerequisites**
-
-n/a
 
 **Test method**
 
@@ -15,8 +13,8 @@ n/a
 
 **Reference(s)**: 
 
-* [TG DS Template](README.md#ref_TG_DS_tmpl) IR requirement Section 8.7.2 (1)
-* [TG DS Template](README.md#ref_TG_DS_tmpl) IR requirement Section 8.7.2 (2)
+* [TG DS-HY](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-dc/README#ref_TG_DS_HY) IR requirement Section 8.7.2 (1)
+* [TG DS-HY](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-dc/README#ref_TG_DS_HY) IR requirement Section 8.7.2 (2)
 
 **Test type**: Manual
 

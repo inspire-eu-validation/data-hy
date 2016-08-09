@@ -22,7 +22,7 @@ An indirect dependency is another conformance class whose requirements must be m
 
 | Specification | Conformance class | Related resource | Parameters |
 | ------------- | ----------------- | ---------------- | ---------- |
-| [TG DS-HY](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/README#ref_TG_DS_HY) | [GML application schemas, Hydrography features](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-gml) | INSPIRE spatial data set encoded in GML, Hydrography features | n/a |
+| [TG DS-HY](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/README#ref_TG_DS_HY) | [GML application schema, Hydrography - Network](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/gml-hy-n) | INSPIRE spatial data set encoded in GML, 'Hydrography - Network' features | n/a |
  
 ## Feature types <a name="feature-types"></a>
 
@@ -52,8 +52,6 @@ TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Tem
 | [Constraints](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/constraints)  | Draft  | A.1.6  |
 | [Geometry](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/geometry-consistency)  | Draft  | A.1.7  |
 | [Identifiers and references](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/identifier-and-references)  | Draft  | A.1.8 |
-| [Link centrelines](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/link-centrelines)  | Draft  | A.1.10  |
-| [Network connectivity](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/network-connectivity)  | Draft  | A.1.11  |
 
 ## XML namespace prefixes <a name="namespaces"></a>
 
@@ -63,15 +61,11 @@ Prefix         | Namespace
 -------------- | -------------------------------------------------
 hy-n3          | http://inspire.ec.europa.eu/schemas/hy-n/3.0
 hy-n4          | http://inspire.ec.europa.eu/schemas/hy-n/4.0
-net3           | http://inspire.ec.europa.eu/schemas/net/3.0
-net4           | http://inspire.ec.europa.eu/schemas/net/4.0
-hy-n           | http://inspire.ec.europa.eu/schemas/hy-n/3.0 or http://inspire.ec.europa.eu/schemas/hy-n/4.0
-hy-p           | http://inspire.ec.europa.eu/schemas/hy-p/3.0 or http://inspire.ec.europa.eu/schemas/hy-p/4.0
-net            | http://inspire.ec.europa.eu/schemas/net/3.0 or http://inspire.ec.europa.eu/schemas/net/4.0
 base           | http://inspire.ec.europa.eu/schemas/base/3.3
 gml            | http://www.opengis.net/gml/3.2
+net3           | http://inspire.ec.europa.eu/schemas/net/3.0
+net4           | http://inspire.ec.europa.eu/schemas/net/4.0
 wfs            | http://www.opengis.net/wfs/2.0
 xsi            | http://www.w3.org/2001/XMLSchema-instance
 xlink          | http://www.w3.org/1999/xlink
 xml            | http://www.w3.org/XML/1998/namespace
-

@@ -1,12 +1,10 @@
-# identifier-and-references
+# Identifiers and references
 
-**Version**: 0.1
+**Version**: 1
 
 **Purpose**: Verify the consistent use of identifiers and references to other features.
 
 **Prerequisites**
-
-n/a
 
 **Test method**
 
@@ -15,14 +13,14 @@ n/a
 
 **Reference(s)**: 
 
-* [TG DS Template](README.md#ref_TG_DS_tmpl) IR requirement Section 8.7.3 (1)
-* [TG DS Template](README.md#ref_TG_DS_tmpl) IR requirement Section 8.7.3 (2)
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/README#ref_TG_DS_tmpl) IR requirement Section 8.7.3 (1)
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/README#ref_TG_DS_tmpl) IR requirement Section 8.7.3 (2)
 
-**Test type**: Manual / Automated
+**Test type**: Manual
 
 **Notes**:
 
-As there is no network property specified in the application schema, the NetworkProperty-related test is superfluous and the test should be dropped. It really belongs to application schemas that make use of NetworkProperty features that reference WatercourseLink features.
+As there is no network property specified in the application schema, the NetworkProperty-related test is superfluous and the test should be dropped from the data specification. These tests belong to application schemas that make use of NetworkProperty features that reference WatercourseLink features.
 
 ## Messages
 

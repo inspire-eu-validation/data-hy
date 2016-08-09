@@ -1,26 +1,26 @@
-# code-list
+# Code lists
 
-**Version**: 0.1
+**Version**: 1
 
 **Purpose**: Verify that code lists extensions can be accessed.
 
 **Prerequisites**
 
-n/a
-
 **Test method**
 
 * Verify that any code list extensions are publicly accessible via HTTP, i.e. inspect extensible code list valued property elements. If a reference (@xlink:href) has a value that does not start with http://inspire.ec.europa.eu/codelist/, verify that a HTTP GET request to the URI retrieves a document. Otherwise report [brokenLink](#brokenLink).
 
+This assertion could currently be removed as the application schema does not specify any extensible code lists.
+
+The test always passes.
+
 **Reference(s)**: 
 
-* [TG DS Template](README.md#ref_TG_DS_tmpl) IR requirement Article 6 (3)
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-ia/README#ref_TG_DS_tmpl) IR requirement Article 6 (3)
 
 **Test type**: Automated
 
 **Notes**
-
-This assertion can be removed as the application schema does not specify any extensible code lists.
 
 ## Messages
 
