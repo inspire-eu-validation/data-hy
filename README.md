@@ -15,8 +15,6 @@ The specification specifies the following conformance classes:
 | [Portrayal, Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-portrayal) | INSPIRE view service |
 | [Metadata for interoperability, Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-metadata) | ISO 19115/19119 metadata record |
 
-The conformance classes related to the 'Physical Waters' schema have not been created yet, but they would follow the same pattern as the network schema.
-
 ## Approach
 
 We have used the following approach to represent the Abstract Test Suite based on the annex in the data specification and the approach taken by the MIWP-5 group for the metadata for interoperability conformance class:

@@ -8,10 +8,10 @@
 
 **Test method**
 
-When an attribute has a code list as its type, verify that the values comply with the definitions and include the values set out in Annex II of the regulation. To pass this tests any instance of an attribute
+When an attribute has a code list as its type, verify that the values comply with the definitions and include the values set out in Annex II of the regulation. To pass this tests that any instance of an attribute
 
-* shall take only values explicitly specified in the INSPIRE code list register when the code list‘s extensibility is 'none'.</li>
-* shall take only a value explicitly specified in the INSPIRE code list register or shall take a value that is narrower (i.e. more specific) than those explicitly specified in the application schema when the code list‘s extensibility is 'narrower'.
+* takes only values explicitly specified in the INSPIRE code list register when the code list‘s extensibility is 'none'.
+* takes only a value explicitly specified in the INSPIRE code list register or shall take a value that is narrower (i.e. more specific) than those explicitly specified in the application schema when the code list‘s extensibility is 'narrower'.
 
 Otherwise report [disallowedCodeListValue](#disallowedCodeListValue).
 
