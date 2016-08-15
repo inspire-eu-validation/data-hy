@@ -76,9 +76,9 @@ TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Tem
 
 | Identifier                                                        | Status   | Test case in [TG DS-HY](#ref_TG_DS_HY)  |
 | ----------------------------------------------------------------- | -------- | ------------ |
-| [Spatial consistency](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-dc/spatial)  | ready for review  | A.1.7, A.3.6  |
-| [Thematic consistency](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-dc/thematic)  | ready for review  | A.3.6  |
-| [Identifiers](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-dc/identifiers)  | ready for review  | A.3.7  |
+| [Spatial consistency](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-dc/spatial)  | ready for review  | A.1.7, A.3.6  |
+| [Thematic consistency](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-dc/thematic)  | ready for review  | A.3.6  |
+| [Identifiers](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-dc/identifiers)  | ready for review  | A.3.7  |
 
 Note: A test case seems to be missing for A.3.5 (update frequency).
 
