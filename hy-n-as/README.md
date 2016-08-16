@@ -22,7 +22,7 @@ An indirect dependency is another conformance class whose requirements must be m
 
 | Specification | Conformance class | Related resource | Parameters |
 | ------------- | ----------------- | ---------------- | ---------- |
-| [TG DS-HY](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/README#ref_TG_DS_HY) | [GML application schemas, Hydrography features](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-gml) | INSPIRE spatial data set encoded in GML, Hydrography features | n/a |
+| [TG DS-HY](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/README#ref_TG_DS_HY) | [GML application schemas, Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-gml) | INSPIRE spatial data set encoded in GML, Hydrography features | n/a |
  
 ## Feature types <a name="feature-types"></a>
 
@@ -61,13 +61,13 @@ The following prefixes are used to refer to the corresponding XML namespaces in 
 
 Prefix         | Namespace
 -------------- | -------------------------------------------------
-hy-n3          | http://inspire.ec.europa.eu/schemas/hy-n/3.0
+hy-n3          | urn:x-inspire:specification:gmlas:HydroNetwork:3.0 
 hy-n4          | http://inspire.ec.europa.eu/schemas/hy-n/4.0
-net3           | http://inspire.ec.europa.eu/schemas/net/3.0
+net3           | urn:x-inspire:specification:gmlas:Network:3.2
 net4           | http://inspire.ec.europa.eu/schemas/net/4.0
-hy-n           | http://inspire.ec.europa.eu/schemas/hy-n/3.0 or http://inspire.ec.europa.eu/schemas/hy-n/4.0
-hy-p           | http://inspire.ec.europa.eu/schemas/hy-p/3.0 or http://inspire.ec.europa.eu/schemas/hy-p/4.0
-net            | http://inspire.ec.europa.eu/schemas/net/3.0 or http://inspire.ec.europa.eu/schemas/net/4.0
+hy-n           | urn:x-inspire:specification:gmlas:HydroNetwork:3.0 or http://inspire.ec.europa.eu/schemas/hy-n/4.0
+hy-p           | urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0 or http://inspire.ec.europa.eu/schemas/hy-p/4.0
+net            | urn:x-inspire:specification:gmlas:Network:3.2 or http://inspire.ec.europa.eu/schemas/net/4.0
 base           | http://inspire.ec.europa.eu/schemas/base/3.3
 gml            | http://www.opengis.net/gml/3.2
 wfs            | http://www.opengis.net/wfs/2.0

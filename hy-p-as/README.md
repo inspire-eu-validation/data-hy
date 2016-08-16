@@ -1,4 +1,4 @@
-# Conformance class: Application schema, Hydrography - Network (DRAFT)
+# Conformance class: Application schema, Hydrography - Physical Waters (DRAFT)
 
 Conformance class for the requirements associated with the application schema. 
 
@@ -22,16 +22,31 @@ An indirect dependency is another conformance class whose requirements must be m
 
 | Specification | Conformance class | Related resource | Parameters |
 | ------------- | ----------------- | ---------------- | ---------- |
-| [TG DS-HY](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/README#ref_TG_DS_HY) | [GML application schema, Hydrography - Network](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/gml-hy-n) | INSPIRE spatial data set encoded in GML, 'Hydrography - Network' features | n/a |
+| [TG DS-HY](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-p-as/README#ref_TG_DS_HY) | [GML application schemas, Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-gml) | INSPIRE spatial data set encoded in GML, Hydrography features | n/a |
  
 ## Feature types <a name="feature-types"></a>
 
 The instantiable feature types in the application schema are:
 
-* HydroNode
-* WatercourseLink
-* WatercourseLinkSequence
-* WatercourseSeparatedCrossing
+* Watercourse
+* StandingWater
+* Wetland
+* GlacierSnowfield
+* Shore
+* DrainageBasin
+* RiverBasin
+* LandWaterBoundary
+* Embankment
+* Ford
+* Lock
+* Sluice
+* DamOrWeir
+* ShorelineConstruction
+* Crossing
+* SpringOrSeep
+* VanishingPoint
+* Rapids
+* Falls
 
 *Note*: When "features" or "spatial objects" are mentioned in the test cases, this refers only to instances of feature types of this application schema, not to any types specified in any other application schema.
 
@@ -48,10 +63,10 @@ TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Tem
 
 | Identifier                                                        | Status   | Test case in [TG DS-HY](#ref_TG_DS_HY)  |
 | ----------------------------------------------------------------- | -------- | ------------ |
-| [Code list values](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/code-list-values)  | Draft  | A.1.3, A.6.1  |
-| [Constraints](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/constraints)  | Draft  | A.1.6  |
-| [Geometry](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/geometry-consistency)  | Draft  | A.1.7  |
-| [Identifiers and references](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/identifier-and-references)  | Draft  | A.1.8 |
+| [Code list values](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-p-as/code-list-values)  | Draft  | A.1.3, A.6.1  |
+| [Constraints](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-p-as/constraints)  | Draft  | A.1.6  |
+| [Geometry](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-p-as/geometry-consistency)  | Draft  | A.1.7  |
+| [Identifiers and references](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-p-as/identifier-and-references)  | Draft  | A.1.8 |
 
 ## XML namespace prefixes <a name="namespaces"></a>
 
@@ -59,11 +74,11 @@ The following prefixes are used to refer to the corresponding XML namespaces in 
 
 Prefix         | Namespace
 -------------- | -------------------------------------------------
-hy-n3          | http://inspire.ec.europa.eu/schemas/hy-n/3.0
-hy-n4          | http://inspire.ec.europa.eu/schemas/hy-n/4.0
+hy-p3          | urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0
+hy-p4          | http://inspire.ec.europa.eu/schemas/hy-p/4.0
 base           | http://inspire.ec.europa.eu/schemas/base/3.3
 gml            | http://www.opengis.net/gml/3.2
-net3           | http://inspire.ec.europa.eu/schemas/net/3.0
+net3           | urn:x-inspire:specification:gmlas:Network:3.2
 net4           | http://inspire.ec.europa.eu/schemas/net/4.0
 wfs            | http://www.opengis.net/wfs/2.0
 xsi            | http://www.w3.org/2001/XMLSchema-instance
