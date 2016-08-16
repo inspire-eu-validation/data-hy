@@ -88,10 +88,10 @@ The following prefixes are used to refer to the corresponding XML namespaces in 
 
 Prefix         | Namespace
 -------------- | -------------------------------------------------
-hy-n3          | http://inspire.ec.europa.eu/schemas/hy-n/3.0
+hy-n3          | urn:x-inspire:specification:gmlas:HydroNetwork:3.0 
 hy-n4          | http://inspire.ec.europa.eu/schemas/hy-n/4.0
-hy-p3          | http://inspire.ec.europa.eu/schemas/hy-p/3.0
-hy-p4          | http://inspire.ec.europa.eu/schemas/hy-p/4.0
+hy-n           | urn:x-inspire:specification:gmlas:HydroNetwork:3.0 or http://inspire.ec.europa.eu/schemas/hy-n/4.0
+hy-p           | urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0 or http://inspire.ec.europa.eu/schemas/hy-p/4.0
 gml            | http://www.opengis.net/gml/3.2
-hy-n           | http://inspire.ec.europa.eu/schemas/hy-n/3.0 or http://inspire.ec.europa.eu/schemas/hy-n/4.0
-hy-p           | http://inspire.ec.europa.eu/schemas/hy-p/3.0 or http://inspire.ec.europa.eu/schemas/hy-p/4.0
+hy-n           | urn:x-inspire:specification:gmlas:HydroNetwork:3.0 or http://inspire.ec.europa.eu/schemas/hy-n/4.0
+hy-p           | urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0 or http://inspire.ec.europa.eu/schemas/hy-p/4.0
