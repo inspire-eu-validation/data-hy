@@ -10,7 +10,7 @@
 
 * Verify that any feature reference in an association role is publicly accessible via HTTP, i.e. inspect all relevant properties. If a reference (@xlink:href) has a value that starts with "#", verify that an element with a `gml:id` attribute with the referenced identifier exists in the same document. If the reference starts with "http", verify that a HTTP GET request to the URI retrieves an XML document. Otherwise report [brokenLink](#brokenLink).
 
-This data theme currently has the following asscoiation roles:
+This data theme currently has the following association roles:
 
 * HydroObject.[relatedHydroObject](#relatedHydroObject) : HydroObject
 * WatercourseSeparatedCrossing.[element](#element) : WatercourseLink

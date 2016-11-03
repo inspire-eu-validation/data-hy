@@ -30,7 +30,7 @@ An indirect dependency is another conformance class whose requirements must be m
  
 ## Feature types <a name="feature-types"></a>
 
-TThe instantiable feature types are:
+The instantiable feature types are:
  
  Network:
  
