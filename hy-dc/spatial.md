@@ -14,7 +14,7 @@ Verify that hydrographic networks are spatially connected across data sets.
 
 Automated assertions:
 
-* If the data set contains both [WatercourseLink](#WatercourseLink) and [SurfaceWater](#SurfaceWater) (Watercourse or StandingWater) features, use a geometry library to verify for each WatercourseLink that its [centerlineGeometry](#centerlineGeometry) is within the [geometry](#geometry) of a single Watercourse or StandingWater feature. Verify for each [HydroNode](#HydroNode) that its geometry is within a Watercourse or StandingWater feature, too. Otherwise report [notWithin](#notWithin).
+* If the data set contains both [WatercourseLink](#WatercourseLink) and [SurfaceWater](#SurfaceWater) (Watercourse or StandingWater) features, use a geometry library to verify for each WatercourseLink that its [centrelineGeometry](#centrelineGeometry) is within the [geometry](#geometry) of a single Watercourse or StandingWater feature. Verify for each [HydroNode](#HydroNode) that its geometry is within a Watercourse or StandingWater feature, too. Otherwise report [notWithin](#notWithin).
 
 Manual assertions:
 
@@ -42,5 +42,5 @@ Abbreviation                                               |  XPath expression
 WatercourseLink <a name="WatercourseLink"></a>   | //schema-element(hy-n:WatercourseLink)
 SurfaceWater <a name="SurfaceWater"></a>   | //schema-element(hy-p:SurfaceWater)
 HydroNode <a name="HydroNode"></a>   | //schema-element(hy-n:HydroNode)
-centerlineGeometry <a name="centerlineGeometry"></a>   | $WatercourseLink/\*:centerlineGeometry
+centrelineGeometry <a name="centrelineGeometry"></a>   | $WatercourseLink/\*:centrelineGeometry
 geometry <a name="geometry"></a>   | $SurfaceWater/\*:geometry
