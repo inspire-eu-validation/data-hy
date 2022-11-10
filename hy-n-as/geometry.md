@@ -10,7 +10,7 @@
 
 Automated assertions:
 
-* Using a geometry library, verify for each [HydroNode](#HydroNode) that the [geometry](#geometry) (a gml:Point) is located a position that touches a [WatercourseLink.centerlineGeometry](#centerlineGeometry) (a gml:LineString or gml:Curve), i.e. that the node is at the start or end of a watercourse link. Otherwise report [freeNode](#freeNode).
+* Using a geometry library, verify for each [HydroNode](#HydroNode) that the [geometry](#geometry) (a gml:Point) is located a position that touches a [WatercourseLink.centrelineGeometry](#centrelineGeometry) (a gml:LineString or gml:Curve), i.e. that the node is at the start or end of a watercourse link. Otherwise report [freeNode](#freeNode).
 
 Manual assertions:
 
@@ -41,4 +41,4 @@ Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
 HydroNode <a name="HydroNode"></a>   | //schema-element(hy-n:HydroNode) 
 geometry <a name="geometry"></a>   | $HydroNode/*/gml:Point
-WatercourseLink.centerlineGeometry <a name="centerlineGeometry"></a>   | //schema-element(hy-n:WatercourseLink)/hy-n:centerlineGeometry 
+WatercourseLink.centrelineGeometry <a name="centrelineGeometry"></a>   | //schema-element(hy-n:WatercourseLink)/hy-n:centrelineGeometry 
