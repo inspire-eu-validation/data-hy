@@ -10,7 +10,9 @@
 
 Automated assertions:
 
-* Using a geometry library, verify for each [HydroNode](#HydroNode) that the [geometry](#geometry) (a gml:Point) is located a position that touches a [WatercourseLink.centerlineGeometry](#centerlineGeometry) (a gml:LineString or gml:Curve), i.e. that the node is at the start or end of a watercourse link. Otherwise report [freeNode](#freeNode).
+* If the HydroNode and the WatercourseLink feature types are contained in the same dataset, using a geometry library, verify for each [HydroNode](#HydroNode) that the [geometry](#geometry) (a gml:Point) is located a position that touches a [WatercourseLink.centrelineGeometry](#centrelineGeometry) (a gml:LineString or gml:Curve), i.e. that the node is at the start or end of a watercourse link. If the check fails report [freeNode](#freeNode).
+
+    * Otherwise, if the HydroNode and the WatercourseLink feature types are not contained in the same dataset, a manual check is required to verify that for each [HydroNode](#HydroNode) the [geometry](#geometry) (a gml:Point) is located a position that touches a [WatercourseLink.centrelineGeometry](#centrelineGeometry) (a gml:LineString or gml:Curve), in this case report the message [freeNodeManualCheck](#freeNodeManualChcek).
 
 Manual assertions:
 
@@ -32,6 +34,7 @@ Manual assertions:
 Identifier  |  Message text (parameters start with '$')
 ---------------------------------------------------------- | -------------------------------------------------------------------------
 freeNode <a name="freeNode"/>  |  XML document '$filename', HydroNode '$gmlid': The node is not located at the start or end of any WatercourseLink feature in the data set.
+freeNodeManualCheck <a name="freeNodeManualCheck"/>  |  XML document '$filename', HydroNode '$gmlid': The relevant WatercourseLink feature is not available in the data set, manually verify that the HydroNode geometry (a gml:Point) is located at a position that touches a WatercourseLink.centrelineGeometry (a gml:LineString or gml:Curve), i.e. that the node is at the start or end of a watercourse link.
 
 ## Contextual XPath references
 
@@ -41,4 +44,4 @@ Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
 HydroNode <a name="HydroNode"></a>   | //schema-element(hy-n:HydroNode) 
 geometry <a name="geometry"></a>   | $HydroNode/*/gml:Point
-WatercourseLink.centerlineGeometry <a name="centerlineGeometry"></a>   | //schema-element(hy-n:WatercourseLink)/hy-n:centerlineGeometry 
+WatercourseLink.centrelineGeometry <a name="centrelineGeometry"></a>   | //schema-element(hy-n:WatercourseLink)/hy-n:centrelineGeometry 
