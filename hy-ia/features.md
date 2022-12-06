@@ -12,14 +12,14 @@
 
 This data theme currently has the following association roles:
 
-* HydroObject.[relatedHydroObject](#relatedHydroObject) : HydroObject
-* WatercourseSeparatedCrossing.[element](#element) : WatercourseLink
-* WatercourseLink.[startNode](#startNode) : HydroNode
-* WatercourseLink.[endNode](#endNode) : HydroNode
-* SurfaceWater.[bank](#bank) : Shore
-* SurfaceWater.[drainsBasin](#drainsBasin) : DrainageBasin
-* SurfaceWater.[neighbour](#neighbour) : StandingWater
-* DrainageBasin.[outlet](#outlet) : SurfaceWater
+* HydroObject.[relatedHydroObject](#relatedHydroObject): HydroObject
+* WatercourseSeparatedCrossing.[element](#element): WatercourseLink
+* WatercourseLink.[startNode](#startNode): HydroNode
+* WatercourseLink.[endNode](#endNode): HydroNode
+* SurfaceWater.[bank](#bank): Shore
+* SurfaceWater.[drainsBasin](#drainsBasin): DrainageBasin
+* SurfaceWater.[neighbour](#neighbour): StandingWater
+* DrainageBasin.[outlet](#outlet): SurfaceWater
 
 **Reference(s)**: 
 
@@ -39,13 +39,13 @@ brokenLink <a name="brokenLink"/>  |  XML document '$filename', $featureType '$g
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-ia/README#namespaces).
 
-Abbreviation                                               |  XPath expression
----------------------------------------------------------- | -------------------------------------------------------------------------
-relatedHydroObject <a name="relatedHydroObject"></a> |  //schema-element(hy:HydroObject)/hy:relatedHydroObject/@xlink:href
-element <a name="element"></a> |  //schema-element(hy-n:WatercourseSeparatedCrossing)/net:element/@xlink:href
-startNode <a name="startNode"></a> |  //schema-element(hy-n:WatercourseLink)/net:startNode/@xlink:href
-endNode <a name="endNode"></a> |  //schema-element(hy-n:WatercourseLink)/net:endNode/@xlink:href
-bank <a name="bank"></a> |  //schema-element(hy-p:SurfaceWater)/hy-p:bank/@xlink:href
-drainsBasin <a name="drainsBasin"></a> |  //schema-element(hy-p:SurfaceWater)/hy-p:drainsBasin/@xlink:href
-neighbour <a name="neighbour"></a> |  //schema-element(hy-p:SurfaceWater)/hy-p:neighbour/@xlink:href
-outlet <a name="outlet"></a> |  //schema-element(hy-p:DrainageBasin)/hy-p:outlet/@xlink:href
+Abbreviation                         |  XPath expression    | Multiplicity    | Voidable
+------------------------------------ | ---------------------|-----------------|-----------------------------
+relatedHydroObject <a name="relatedHydroObject"></a> |  //schema-element(hy:HydroObject)/hy:relatedHydroObject/@xlink:href | 0..\* | No
+element <a name="element"></a> |  //schema-element(hy-n:WatercourseSeparatedCrossing)/net:element/@xlink:href | 2..\* | No
+startNode <a name="startNode"></a> |  //schema-element(hy-n:WatercourseLink)/net:startNode/@xlink:href | 0..1 | No
+endNode <a name="endNode"></a> |  //schema-element(hy-n:WatercourseLink)/net:endNode/@xlink:href | 0..1 | No
+bank <a name="bank"></a> |  //schema-element(hy-p:SurfaceWater)/hy-p:bank/@xlink:href | 0..\* | Yes
+drainsBasin <a name="drainsBasin"></a> |  //schema-element(hy-p:SurfaceWater)/hy-p:drainsBasin/@xlink:href | 1..\* | Yes
+neighbour <a name="neighbour"></a> |  //schema-element(hy-p:SurfaceWater)/hy-p:neighbour/@xlink:href | 0..\* | Yes
+outlet <a name="outlet"></a> |  //schema-element(hy-p:DrainageBasin)/hy-p:outlet/@xlink:href | 1..\* | Yes
