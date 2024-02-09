@@ -11,7 +11,7 @@
 * Validate each document against the latest INSPIRE official schema(s), using strict XML schema validation. 
   The official schemas for this data theme are:
   *  Hydro Network: https://inspire.ec.europa.eu/schemas/hy-n/4.0/HydroNetwork.xsd
-  *  Hydro Physical Waters: https://inspire.ec.europa.eu/schemas/hy-p/4.0/HydroPhysicalWaters.xsd
+  *  Hydro Physical Waters: https://inspire.ec.europa.eu/schemas/hy-p/5.0/HydroPhysicalWaters.xsd
 
 **Reference(s)**: 
 
