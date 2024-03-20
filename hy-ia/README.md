@@ -1,10 +1,10 @@
-# Conformance class: Information accessibility, Hydrography (DRAFT)
+# Conformance class: Information accessibility, Hydrography
 
 Conformance class for the requirements related to the accessibility of referenced information, for example, information stored in registries (code lists, coordinate reference systems).
 
 To be able to test this conformance class, the encoding of the data set must be known, i.e. this is a parameterized conformance class. The XPath expressions used in this test suite assume that the GML encoding is used. If used with the GML encoding this conformance class has an indirect dependency to the conformance class "GML application schemas, Hydrography".
 
-This conformance class is part of the [Abstract Test Suite for the INSPIRE Data Specification on Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1).
+This conformance class is part of the [Abstract Test Suite for the INSPIRE Data Specification on Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy).
 
 ## Standardization target type
 
@@ -18,7 +18,7 @@ A direct dependency is another conformance class whose requirements must be met 
 
 | Specification | Conformance class | Parameters | 
 | ------------- | ----------------- | ---------- |
-| [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-ia/README#ref_TG_DS_tmpl) | [Information accessibility](http://inspire.ec.europa.eu/id/ats/data/3.0rc3/information-accessibility) | n/a |
+| [TG DS Template](./README.md#ref_TG_DS_tmpl) | [Information accessibility](http://inspire.ec.europa.eu/id/ats/data/master/information-accessibility) | n/a |
 
 ### Indirect dependencies
 
@@ -26,7 +26,7 @@ An indirect dependency is another conformance class whose requirements must be m
 
 | Specification | Conformance class | Related resource | Parameters |
 | ------------- | ----------------- | ---------------- | ---------- |
-| [TG DS-HY](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-ia/README#ref_TG_DS_HY) | [GML application schemas, Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-gml) | INSPIRE spatial data set encoded in GML, Hydrography features | n/a |
+| [TG DS-HY](./README#ref_TG_DS_HY) | [GML application schemas, Hydrography](../hy-gml) | INSPIRE spatial data set encoded in GML, Hydrography features | n/a |
  
 ## Feature types <a name="feature-types"></a>
 
@@ -69,15 +69,15 @@ The following abbreviations are used in the test text for referring to external 
 
 Abbreviation                     | Document name
 -------------------------------- | --------------------------------------------------
-TG DS-HY <a name="ref_TG_DS_HY"></a>   | [INSPIRE Data Specification on Hydrography – Technical Guidelines version 3.1](http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_HY_v3.1.pdf)
-TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Template version 3.0rc3](http://inspire.jrc.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_Template_v3.0rc3.pdf)
+TG DS-HY <a name="ref_TG_DS_HY"></a>   | [INSPIRE Data Specification on Hydrography – Technical Guidelines](https://knowledge-base.inspire.ec.europa.eu/publications/inspire-data-specification-hydrography-technical-guidelines_en)
+TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Template](https://knowledge-base.inspire.ec.europa.eu/publications/data-specifications-template_en)
 
 ## Test Cases
 
 | Identifier                                                        | Status   | Test case in [TG DS-HY](#ref_TG_DS_HY)  |
 | ----------------------------------------------------------------- | -------- | ------------ |
-| [Code lists](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-ia/code-list)  | ready for review  | A.6.1 |
-| [Feature references](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-ia/features)  | ready for review  | A.1.4 |
+| [Code lists](./code-list.md)  | ready for review  | A.6.1 |
+| [Feature references](./features.md)  | ready for review  | A.1.4 |
 
 ## XML namespace prefixes <a name="namespaces"></a>
 
@@ -86,8 +86,8 @@ The following prefixes are used to refer to the corresponding XML namespaces in 
 Prefix         | Namespace
 -------------- | -------------------------------------------------
 gml            | http://www.opengis.net/gml/3.2
-hy-n           | urn:x-inspire:specification:gmlas:HydroNetwork:3.0 or http://inspire.ec.europa.eu/schemas/hy-n/4.0
-hy-p           | urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0 or http://inspire.ec.europa.eu/schemas/hy-p/4.0
+hy-n           | http://inspire.ec.europa.eu/schemas/hy-n/4.0
+hy-p           | http://inspire.ec.europa.eu/schemas/hy-p/5.0
 
 The following variables are used to refer to the corresponding Xpath expressions in all test descriptions:
 
