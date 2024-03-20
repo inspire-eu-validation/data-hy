@@ -1,6 +1,6 @@
-# Conformance class: Metadata for interoperability, Hydrography (DRAFT)
+# Conformance class: Metadata for interoperability, Hydrography
 
-This conformance class is part of the [Abstract Test Suite for the INSPIRE Data Specification on Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1).
+This conformance class is part of the [Abstract Test Suite for the INSPIRE Data Specification on Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy).
 
 ## Standardization target type
 
@@ -14,7 +14,7 @@ A direct dependency is another conformance class whose requirements must be met 
 
 | Specification | Conformance class | Parameters | 
 | ------------- | ----------------- | ---------- |
-| [INSPIRE Data Specifications Template, version 3.0rc3](#ref_TG_DS_IMPL) | [Metadata for interoperability](http://inspire.ec.europa.eu/id/ats/data/3.0rc3/interoperability-metadata) | n/a |
+| [INSPIRE Data Specifications Template, version 3.0rc3](#ref_TG_DS_IMPL) | [Metadata for interoperability](http://inspire.ec.europa.eu/id/ats/data/master/interoperability-metadata) | n/a |
 
 ### Indirect dependencies
 
@@ -24,8 +24,8 @@ none
 
 | Abbreviation | Document name                       |
 | ------------ | ----------------------------------- |
-| TG DS-HY <a name="ref_TG_DS_HY"></a>   | [INSPIRE Data Specification on Hydrography – Technical Guidelines version 3.1](http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_HY_v3.1.pdf) |
-| TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Template version 3.0rc3](http://inspire.jrc.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_Template_v3.0rc3.pdf) |
+TG DS-HY <a name="ref_TG_DS_HY"></a>   | [INSPIRE Data Specification on Hydrography – Technical Guidelines](https://knowledge-base.inspire.ec.europa.eu/publications/inspire-data-specification-hydrography-technical-guidelines_en)
+TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Template](https://knowledge-base.inspire.ec.europa.eu/publications/data-specifications-template_en)
 
 ## Tests
 

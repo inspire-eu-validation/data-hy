@@ -1,19 +1,19 @@
-# Abstract Test Suite: Data Specification on Hydrography (DRAFT)
+# Abstract Test Suite: Data Specification on Hydrography
                        
-The Data Specification on Hydrography – Technical Guidelines (version 3.1) and the associated GML application schemas (versions 3.0 and 4.0) specifying requirements for the interoperability of spatial data sets of the data theme hydrography.
+The Data Specification on Hydrography – Technical Guidelines (version 3.4) and the associated GML application schemas specifying requirements for the interoperability of spatial data sets of the data theme hydrography.
 
 The specification specifies the following conformance classes:
 
 | Conformance class | Standardization target |
 | ----------------- | ---------------------- |
-| [GML application schemas, Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-gml) | INSPIRE spatial data set encoded in GML, Hydrography features |
-| [Application schema, Hydrography - Network](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as) | INSPIRE spatial data set |
-| [Application schema, Hydrography - Physical Waters](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-p-as) | INSPIRE spatial data set |
-| [Reference Systems, Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-rs) | INSPIRE spatial data set |
-| [Data Consistency, Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-dc) | INSPIRE spatial data set |
-| [Information Accessibility, Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-ia) | INSPIRE spatial data set |
-| [Portrayal, Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-portrayal) | INSPIRE view service |
-| [Metadata for interoperability, Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-metadata) | ISO 19115/19119 metadata record |
+| [GML application schemas, Hydrography](./hy-gml) | INSPIRE spatial data set encoded in GML, Hydrography features |
+| [Application schema, Hydrography - Network](./hy-n-as) | INSPIRE spatial data set |
+| [Application schema, Hydrography - Physical Waters](./hy-p-as) | INSPIRE spatial data set |
+| [Reference Systems, Hydrography](./hy-rs) | INSPIRE spatial data set |
+| [Data Consistency, Hydrography](./hy-dc) | INSPIRE spatial data set |
+| [Information Accessibility, Hydrography](./hy-ia) | INSPIRE spatial data set |
+| [Portrayal, Hydrography](./hy-portrayal) | INSPIRE view service |
+| [Metadata for interoperability, Hydrography](./hy-metadata) | ISO 19115/19119 metadata record |
 
 ## Approach
 

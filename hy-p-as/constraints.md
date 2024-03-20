@@ -14,6 +14,7 @@ For constraints that require retrieving a referenced resource and the resource c
 
 Automated tests:
 
+* A river/drainage basin geometry may be a surface or a multisurface; OCL: "inv: geometry.oclIsKindOf(GM_Surface) or geometry.oclIsKindOf(GM_MultiSurface)". Verify that [RiverBasin.geometry](#geometryRB)/[DrainageBasin.geometry](#geometryDB) is a gml:Surface or gml:MultiSurface or a gml:Polygon.
 * A river basin may not be contained in any other basin; OCL: "inv: self.containsBasin->forall(c | not c.oclIsTypeOf(RiverBasin))". Verify that all resources referenced in [containsBasin](#containsBasin) are not a schema-element(hy-p:RiverBasin).
 * A standing water geometry may be a surface or point; OCL: "inv: self.geometry.oclIsTypeOf(GM_Surface) or self.geometry.oclIsTypeOf(GM_Point)". Verify that [StandingWater.geometry](#geometry1) is a gml:Surface, gml:Polygon or gml:Point. 
 * Watercourse geometry may be a curve or surface; OCL: "inv: self.geometry.oclIsTypeOf(GM_Curve) or self.geometry.oclIsTypeOf(GM_Surface)". Verify that [Watercourse.geometry](#geometry2) is a gml:Surface, gml:Polygon, gml:Curve or gml:LineString.
@@ -41,9 +42,11 @@ brokenLink <a name="brokenLink"/>  |  XML document '$filename', $featureType '$g
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-p-as/README#namespaces).
 
-Abbreviation                                               |  XPath expression
----------------------------------------------------------- | -------------------------------------------------------------------------
-containsBasin <a name="containsBasin"></a> |  //schema-element(hy-p:DrainageBasin)/hy-p:containsBasin/@xlink:href
-StandingWater.geometry <a name="geometry1"></a> |  //schema-element(hy-p:StandingWater)/hy-p:geometry/*
-Watercourse.geometry <a name="geometry2"></a> |  //schema-element(hy-p:Watercourse)/hy-p:geometry/*
-condition <a name="condition"></a> |  //schema-element(hy-p:Watercourse)/hy-p:condition
+Abbreviation                                               |  XPath expression                                       |Multiplicity       |Voidable
+---------------------------------------------------------- | ------------------------------------------------------- | ------------------|----------
+RiverBasin.geometry <a name="geometryRB"></a> |  //schema-element(hy-p:RiverBasin)/hy-p:geometry/gml:Surface <br> //schema-element(hy-p:RiverBasin)/hy-p:geometry/gml:MultiSurface <br> //schema-element(hy-p:RiverBasin)/hy-p:geometry/gml:Polygon    | 1 | No
+DrainageBasin.geometry <a name="geometryDB"></a> |  //schema-element(hy-p:DrainageBasin)/hy-p:geometry/gml:Surface <br> //schema-element(hy-p:DrainageBasin)/hy-p:geometry/gml:MultiSurface <br> //schema-element(hy-p:DrainageBasin)/hy-p:geometry/gml:Polygon   | 1 | No
+containsBasin <a name="containsBasin"></a> |  //schema-element(hy-p:DrainageBasin)/hy-p:containsBasin/@xlink:href   | 0..* | Yes
+StandingWater.geometry <a name="geometry1"></a> |  //schema-element(hy-p:StandingWater)/hy-p:geometry/*               | 1 | No
+Watercourse.geometry <a name="geometry2"></a> |  //schema-element(hy-p:Watercourse)/hy-p:geometry/*                   | 1 | No
+condition <a name="condition"></a> |  //schema-element(hy-p:Watercourse)/hy-p:condition                               | 0..1 | Yes

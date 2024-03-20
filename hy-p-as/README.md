@@ -1,10 +1,10 @@
-# Conformance class: Application schema, Hydrography - Physical Waters (DRAFT)
+# Conformance class: Application schema, Hydrography - Physical Waters
 
 Conformance class for the requirements associated with the application schema. 
 
 To be able to test this conformance class, the encoding of the data set must be known, i.e. this is a parameterized conformance class. The XPath expressions used in this test suite assume that the GML encoding is used. If used with the GML encoding this conformance class has an indirect dependency to the conformance class "GML application schemas, Hydrography".
 
-This conformance class is part of the [Abstract Test Suite for the INSPIRE Data Specification on Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1).
+This conformance class is part of the [Abstract Test Suite for the INSPIRE Data Specification on Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy).
 
 ## Standardization target type
 
@@ -22,7 +22,7 @@ An indirect dependency is another conformance class whose requirements must be m
 
 | Specification | Conformance class | Related resource | Parameters |
 | ------------- | ----------------- | ---------------- | ---------- |
-| [TG DS-HY](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-p-as/README#ref_TG_DS_HY) | [GML application schemas, Hydrography](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-gml) | INSPIRE spatial data set encoded in GML, Hydrography features | n/a |
+| [TG DS-HY](./README#ref_TG_DS_HY) | [GML application schemas, Hydrography](../hy-gml) | INSPIRE spatial data set encoded in GML, Hydrography features | n/a |
  
 ## Feature types <a name="feature-types"></a>
 
@@ -56,17 +56,16 @@ The following abbreviations are used in the test text for referring to external 
 
 Abbreviation                     | Document name
 -------------------------------- | --------------------------------------------------
-TG DS-HY <a name="ref_TG_DS_HY"></a>   | [INSPIRE Data Specification on Hydrography – Technical Guidelines version 3.1](http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_HY_v3.1.pdf)
-TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Template version 3.0rc3](http://inspire.jrc.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_Template_v3.0rc3.pdf)
-
+TG DS-HY <a name="ref_TG_DS_HY"></a>   | [INSPIRE Data Specification on Hydrography – Technical Guidelines](https://knowledge-base.inspire.ec.europa.eu/publications/inspire-data-specification-hydrography-technical-guidelines_en)
+TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Template](https://knowledge-base.inspire.ec.europa.eu/publications/data-specifications-template_en)
 ## Test Cases
 
 | Identifier                                                        | Status   | Test case in [TG DS-HY](#ref_TG_DS_HY)  |
 | ----------------------------------------------------------------- | -------- | ------------ |
-| [Code list values](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-p-as/code-list-values)  | Draft  | A.1.3, A.6.1  |
-| [Constraints](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-p-as/constraints)  | Draft  | A.1.6  |
-| [Geometry](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-p-as/geometry)  | Draft  | A.1.7  |
-| [Identifiers and references](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-p-as/identifier-and-references)  | Draft  | A.1.8 |
+| [Code list values](./code-list-values.md)  | Draft  | A.1.3, A.6.1  |
+| [Constraints](./constraints.md)  | Draft  | A.1.6  |
+| [Geometry](./geometry.md)  | Draft  | A.1.7  |
+| [Identifiers and references](./identifier-and-references.md)  | Draft  | A.1.8 |
 
 ## XML namespace prefixes <a name="namespaces"></a>
 
@@ -74,12 +73,10 @@ The following prefixes are used to refer to the corresponding XML namespaces in 
 
 Prefix         | Namespace
 -------------- | -------------------------------------------------
-hy-p3          | urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0
-hy-p4          | http://inspire.ec.europa.eu/schemas/hy-p/4.0
-base           | http://inspire.ec.europa.eu/schemas/base/3.3
+hy-p           | http://inspire.ec.europa.eu/schemas/hy-p/5.0
+net            | http://inspire.ec.europa.eu/schemas/net/5.0
+base           | http://inspire.ec.europa.eu/schemas/base/4.0
 gml            | http://www.opengis.net/gml/3.2
-net3           | urn:x-inspire:specification:gmlas:Network:3.2
-net4           | http://inspire.ec.europa.eu/schemas/net/4.0
 wfs            | http://www.opengis.net/wfs/2.0
 xsi            | http://www.w3.org/2001/XMLSchema-instance
 xlink          | http://www.w3.org/1999/xlink
