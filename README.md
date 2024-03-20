@@ -1,6 +1,6 @@
-# Abstract Test Suite: Data Specification on Hydrography (DRAFT)
+# Abstract Test Suite: Data Specification on Hydrography
                        
-The Data Specification on Hydrography – Technical Guidelines (version 3.1) and the associated GML application schemas (versions 3.0 and 4.0) specifying requirements for the interoperability of spatial data sets of the data theme hydrography.
+The Data Specification on Hydrography – Technical Guidelines (version 3.4) and the associated GML application schemas specifying requirements for the interoperability of spatial data sets of the data theme hydrography.
 
 The specification specifies the following conformance classes:
 
