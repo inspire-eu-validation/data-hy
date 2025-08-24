@@ -18,7 +18,7 @@ Automated tests:
 * A river basin may not be contained in any other basin; OCL: "inv: self.containsBasin->forall(c | not c.oclIsTypeOf(RiverBasin))". Verify that all resources referenced in [containsBasin](#containsBasin) are not a schema-element(hy-p:RiverBasin).
 * A standing water geometry may be a surface or point; OCL: "inv: self.geometry.oclIsTypeOf(GM_Surface) or self.geometry.oclIsTypeOf(GM_Point)". Verify that [StandingWater.geometry](#geometry1) is a gml:Surface, gml:Polygon or gml:Point. 
 * Watercourse geometry may be a curve or surface; OCL: "inv: self.geometry.oclIsTypeOf(GM_Curve) or self.geometry.oclIsTypeOf(GM_Surface)". Verify that [Watercourse.geometry](#geometry2) is a gml:Surface, gml:Polygon, gml:Curve or gml:LineString.
-* A condition attribute may be specified only for a man-made watercourse; OCL: "inv: (self->count(condition)=1) implies (self.origin=OriginType::manMade)". Verify that [condition](#condition) is only set, if the origin is "manMade".
+* A condition attribute may be specified only for a man-made watercourse; OCL: "inv: (self->count(condition)=1) implies (self.origin=OriginType::manMade)". Verify that [condition](#condition) is only set, if the [origin](#origin) is "manMade".
 
 Manual tests:
 
@@ -50,3 +50,4 @@ containsBasin <a name="containsBasin"></a> |  //schema-element(hy-p:DrainageBasi
 StandingWater.geometry <a name="geometry1"></a> |  //schema-element(hy-p:StandingWater)/hy-p:geometry/*               | 1 | No
 Watercourse.geometry <a name="geometry2"></a> |  //schema-element(hy-p:Watercourse)/hy-p:geometry/*                   | 1 | No
 condition <a name="condition"></a> |  //schema-element(hy-p:Watercourse)/hy-p:condition                               | 0..1 | Yes
+origin <a name="origin"></a> |  //schema-element(hy-p:Watercourse)/hy-p:origin/@xlink:href="http://inspire.ec.europa.eu/codelist/OriginValue/manMade" | 1 | Yes
